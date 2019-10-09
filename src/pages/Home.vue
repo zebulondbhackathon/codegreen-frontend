@@ -36,7 +36,7 @@
                        fluid
                >
                  <v-row>
-                   <v-col
+                   <v-col sm="12"
                            v-for="(item, i) in items"
                            :key="i"
                    >
@@ -78,7 +78,7 @@
        },
        {
          color: '#225F73',
-         title: 'Multiple vendors          ',
+         title: 'Multiple vendors',
        },
        {
          color: '#652175',
