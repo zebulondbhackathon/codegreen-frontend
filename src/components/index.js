@@ -7,6 +7,7 @@ import StatsCard from "./Cards/StatsCard.vue";
 import NavTabsTable from "./Tables/NavTabsTable.vue";
 import OrderedTable from "./Tables/OrderedTable.vue";
 import SimpleTable from "./Tables/SimpleTable.vue";
+import AlphaDigTable from "./Tables/AlphaDigTable.vue";
 
 export {
   ChartCard,
@@ -14,5 +15,6 @@ export {
   StatsCard,
   NavTabsTable,
   OrderedTable,
+  AlphaDigTable,
   SimpleTable
 };
