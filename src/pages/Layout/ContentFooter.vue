@@ -29,12 +29,14 @@
           >Creative Code Green</a
         >, made with <i class="fa fa-heart heart"></i> for a better web
       </div>
-      <div id="ticker"><p><span style="color:white"></span>MSCI,ESG Ratings Change for AAPL: <span style="color:red">AAA to AA</span>
-Bloomberg,Chevron CVX.N to increase investments in Renewables,Renewable investments to double in 2020
-Bloomberg,Exxon XOM.N settles oil spill claims. Stock rises,
+      <div></div>
+      <div id="ticker"><button onclick="document.getElementById('ticker p').style.animation-play-state = 'paused'">PAUSE</button><p><span style="color:white"></span>MSCI,ESG Ratings Change for AAPL: <span style="color:#c70000;">AAA to AA</span>
+Bloomberg,Chevron CVX.N to increase investments in Renewables,Renewable investments to double in 2020 - - - 
+Bloomberg,Exxon XOM.N settles oil spill claims. Stock rises, - - - </p>
+<!--
 Reuters,Rio Tinto to shutdown mine in Queensland,The worlds <span>     </span>largest miner Rio Tino bowed to pressure from Banks and activists to shut down its legacy mine responsible for most of its pollution,
 Bloomberg,Contribution of renewables increases to 11% in the US,Renewable energy sources contributed 11% of US energy needs a new high,
-Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc missed its Green House Gas emission targets which could attract aire of regulators in Europe</p>
+Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc missed its Green House Gas emission targets which could attract aire of regulators in Europe</p>-->
              </div>
 
              <div class="ticker-wrap">
@@ -51,20 +53,35 @@ Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc m
 </template>
 <script>
 export default {};
+
+function pause() {
+  alert("Hello!");
+}
 </script>
 <style>
 
 #ticker {
   position: fixed;
+  z-index:3;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(72, 70, 80);
+  background-color: rgb(60, 84, 50);
   color: white;
   height:60px;
   padding-top:15px;
-  overflow:hidden;
+  /*overflow:hidden;*/
 
+}
+
+#ticker button {
+  float:right;
+  margin-top: -40px;
+  background-color:rgb(60, 84, 50);
+  border-radius: 5px;
+  z-index:-1;
+  position: relative;
+  padding:5px;
 }
 
 #ticker p {
@@ -79,6 +96,7 @@ export default {};
  position: absolute;
  margin: 0;
  text-align: right;
+ webkit-animation-play-state: running;
 
 
 
