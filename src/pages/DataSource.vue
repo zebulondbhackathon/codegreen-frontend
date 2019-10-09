@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <v-stepper v-model="e1">
-      <v-stepper-header id="stepperHeader">
+      <v-stepper-header id="stepperHeader" style="font-size: 20px; color: white !important;">
         <v-stepper-step step="0" @click="e1 = 0">
           Source
         </v-stepper-step>

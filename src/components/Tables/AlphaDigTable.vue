@@ -1,6 +1,6 @@
 <template>
   <div>
-    <md-table v-model="users" :table-header-color="tableHeaderColor" class="row-color">
+    <md-table v-model="users" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="item.row === 1 ? 'row-color' : ''">
         <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
         <md-table-cell md-label="Symbol">{{ item.symbol }}</md-table-cell>
