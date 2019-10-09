@@ -88,7 +88,7 @@ export default {
   },
   // Fetches posts when the component is created.
   created() {
-    axios.get(`http://localhost:8060/esgdata/all`)
+    axios.get(`http://codegreen-backend.eastus.cloudapp.azure.com:8060/esgdata/all`)
     .then(response => {
       // JSON responses are automatically parsed.
       this.users = response.data
