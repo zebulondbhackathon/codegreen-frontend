@@ -68,7 +68,7 @@
           </v-card>
         </v-stepper-content>
         <v-stepper-content step="2">
-          <v-card class="mb-12" color="grey lighten-1" height="500px">
+          <v-card class="mb-12" color="grey lighten-1">
             <div>
               <md-card>
                 <md-card-header data-background-color="green">
