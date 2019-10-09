@@ -15,7 +15,7 @@
      </div>
    <v-container>
      <v-row>
-       <v-col>
+       <v-col sm="4">
          <div>
            <template>
              <v-card
@@ -25,7 +25,7 @@
                <v-system-bar color="pink darken-2"></v-system-bar>
                <v-app-bar dark color="pink">
                  <v-app-bar-nav-icon></v-app-bar-nav-icon>
-                 <v-toolbar-title>ESG Data Sourcing Challenges</v-toolbar-title>
+                 <div>ESG Data Sourcing Challenges</div>
                  <div class="flex-grow-1"></div>
                  <v-btn icon>
                    <v-icon>mdi-magnify</v-icon>
@@ -43,20 +43,15 @@
                      <v-card
                              :color="item.color"
                              dark
+                             height="100px;"
                      >
-                       <v-list-item three-line>
+                       <v-list-item>
                          <v-list-item-content class="align-self-start">
                            <v-list-item-title
                                    class="headline mb-2"
                                    v-text="item.title"
                            ></v-list-item-title>
-                           <v-list-item-subtitle v-text="item.artist"></v-list-item-subtitle>
                          </v-list-item-content>
-                         <v-list-item-avatar
-                                 size="125"
-                                 tile
-                         >
-                         </v-list-item-avatar>
                        </v-list-item>
                      </v-card>
                    </v-col>
@@ -66,8 +61,8 @@
            </template>
          </div>
        </v-col>
-       <v-col>
-         <img src="@/assets/img/arc.png" alt="" width="800px" />
+       <v-col sm="8">
+         <img src="@/assets/img/arc.png" alt="" style="width: 100%; height: 100%;" />
        </v-col>
      </v-row>
    </v-container>
@@ -83,7 +78,7 @@
        },
        {
          color: '#225F73',
-         title: 'Multiple vendors',
+         title: 'Multiple vendors          ',
        },
        {
          color: '#652175',
