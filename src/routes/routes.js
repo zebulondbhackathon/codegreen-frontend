@@ -1,6 +1,8 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
+import ClientInsights from "@/pages/ClientInsights.vue";
+import DataSource from "@/pages/DataSource.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import TableList from "@/pages/TableList.vue";
 import Typography from "@/pages/Typography.vue";
@@ -25,6 +27,16 @@ const routes = [
         path: "dashboard",
         name: "Dashboard",
         component: Dashboard
+      },
+      {
+        path: "data-source",
+        name: "Data Source",
+        component: DataSource
+      },
+      {
+        path: "client-insights",
+        name: "Client Insights",
+        component: ClientInsights
       },
       {
         path: "user",

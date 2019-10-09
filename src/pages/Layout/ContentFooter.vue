@@ -3,24 +3,24 @@
     <div class="container">
       <nav>
         <ul>
-          <li>
+          <!-- <li>
             <a href="https://www.creative-tim.com">Creative Tim</a>
-          </li>
+          </li> -->
           <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
+            <a href="http://www.db.com">
+              About Caelimeterics
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="http://blog.creative-tim.com">
               Blog
             </a>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <a href="https://www.creative-tim.com/license">
               Licenses
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <div class="copyright text-center">
