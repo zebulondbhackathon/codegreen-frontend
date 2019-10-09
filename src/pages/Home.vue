@@ -73,19 +73,19 @@
    data: () => ({
      items: [
        {
-         color: '#385F73',
+         color: '#1B5E20',
          title: 'Nonstandard data',
        },
        {
-         color: '#225F73',
+         color: '#388E3C',
          title: 'Multiple vendors',
        },
        {
-         color: '#652175',
+         color: '#43A047',
          title: 'Data accuracy and Bias',
        },
        {
-         color: '#952175',
+         color: '#81C784',
          title: 'Data volumes',
        },
      ],
