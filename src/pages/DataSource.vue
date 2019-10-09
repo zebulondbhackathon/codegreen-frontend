@@ -2,13 +2,13 @@
   <div class="content">
     <v-stepper v-model="e1">
       <v-stepper-header id="stepperHeader">
-        <v-stepper-step color="white" :complete="e1 > 0" step="0" @click="e1 = 0">
+        <v-stepper-step step="0" @click="e1 = 0">
           Source
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step :complete="e1 > 1" step="1" @click="e1 = 1">
+        <v-stepper-step step="1" @click="e1 = 1">
           Process
         </v-stepper-step>
 
@@ -71,9 +71,34 @@
           <v-card class="mb-12" color="grey lighten-1" height="500px">Analyze</v-card>
         </v-stepper-content>
         <v-stepper-content step="3">
-          <v-card class="mb-12" color="grey lighten-1" height="500px">
-            Distribute
-          </v-card>
+          <div class="md-layout">
+            <div
+              class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
+            >
+              <md-card style="height: 250px">
+                <md-card-header data-background-color="orange">
+                  <h4 class="title">Mercury</h4>
+                  <!-- <p class="category">New employees on 15th September, 2016</p> -->
+                </md-card-header>
+                <md-card-content>
+                  <v-img :src="mercuryImage"/>
+                </md-card-content>
+              </md-card>
+            </div>
+            <div
+              class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
+            >
+              <md-card>
+                <md-card-header data-background-color="orange">
+                  <h4 class="title">DIF</h4>
+                  <!-- <p class="category">New employees on 15th September, 2016</p> -->
+                </md-card-header>
+                <md-card-content>
+                  <v-img :src="DIFImage"/>
+                </md-card-content>
+              </md-card>
+            </div>
+          </div>
         </v-stepper-content>
       </v-stepper-items>
       <!-- <v-footer>
@@ -136,7 +161,9 @@ export default {
       e1: 0,
       alphaDig: "Alpha-DIG analyzing data...",
       quorum: ["Quorum MVA analyzing data...", "Rules applied...8/95", "MVA processing complete!"],
-      button: ''
+      button: '',
+      mercuryImage: require('@/assets/img/Mercury.jpg'),
+      DIFImage: require('@/assets/img/DIF.jpg')
     };
   },
   methods: {
