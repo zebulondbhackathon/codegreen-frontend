@@ -12,6 +12,14 @@
         <md-icon>person</md-icon>
         <p>User Profile</p>
       </sidebar-link>
+      <sidebar-link to="/data-source">
+        <md-icon>grid_on</md-icon>
+        <p>Data Source</p>
+      </sidebar-link>
+      <sidebar-link to="/client-insights">
+        <md-icon>explore</md-icon>
+        <p>Client Insights</p>
+      </sidebar-link>
       <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
         <p>Table list</p>
