@@ -106,7 +106,7 @@
                   <!-- <p class="category">New employees on 15th September, 2016</p> -->
                 </md-card-header>
                 <md-card-content>
-                  <v-img style="margin-left:auto; margin-right: auto;" height="75%" width="75%" :src="DIFImage"/>
+                  <v-img style="margin-left:auto; margin-right: auto;" height="80%" width="80%" :src="DIFImage"/>
                 </md-card-content>
               </md-card>
             </div>
