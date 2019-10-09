@@ -30,9 +30,19 @@
         >, made with <i class="fa fa-heart heart"></i> for a better web
       </div>
       <div></div>
-      <div id="ticker"><button onclick="document.getElementById('ticker p').style.animation-play-state = 'paused'">PAUSE</button><p><span style="color:white"></span>MSCI,ESG Ratings Change for AAPL: <span style="color:#c70000;">AAA to AA</span>
-Bloomberg,Chevron CVX.N to increase investments in Renewables,Renewable investments to double in 2020 - - - 
-Bloomberg,Exxon XOM.N settles oil spill claims. Stock rises, - - - </p>
+      <div id="ticker">
+      <div id="logo"> <img style="margin-top:-20px;" src="gticker.png" alt="Italian Trulli"></div>
+      <!-- <button onclick="document.getElementById('ticker p').style.animation-play-state = 'paused'">PAUSE</button>-->
+      <p><span class="names" onlcick="alert('Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)')"> 
+          [ MSCI ] </span>
+          ESG Ratings Change for AAPL: <span style="color:#EE6352;">AAA to AA</span> - - - 
+      <span class="names" onclick="alert('Exxon today announced that it has successfully settled claims from the oil spill off Ireland, LSE reports')"> 
+          [ Bloomberg ] </span> 
+          Exxon XOM.N settles oil spill claims. Stock rises - - - 
+      <span class="names" onclick="alert('B2Gold Corp. TSX:BTO will replace New Gold Inc. TSX:NGD on the Jantzi Social Index effective as of the opening of markets on Monday, September 23, 2019')"> 
+          [ Sustainalytics ] </span>
+          B2Gold Corp. Added to Jantzi Social Index. 
+      </p>
 <!--
 Reuters,Rio Tinto to shutdown mine in Queensland,The worlds <span>     </span>largest miner Rio Tino bowed to pressure from Banks and activists to shut down its legacy mine responsible for most of its pollution,
 Bloomberg,Contribution of renewables increases to 11% in the US,Renewable energy sources contributed 11% of US energy needs a new high,
@@ -54,11 +64,29 @@ Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc m
 <script>
 export default {};
 
-function pause() {
-  alert("Hello!");
-}
+
 </script>
 <style>
+
+.names {
+  color:#CBE896;
+}
+
+.names:hover {
+  cursor:pointer;
+}
+
+#logo {
+  background-color: #033103;
+  border-radius:20px;
+  float:left;
+  margin-top:-40px;
+  z-index:23;
+  width:120px;
+  height:40px;
+  margin-left:40px;
+  padding-top:0px;
+}
 
 #ticker {
   position: fixed;
@@ -66,7 +94,7 @@ function pause() {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(60, 84, 50);
+  background-color:#3e7740 ;
   color: white;
   height:60px;
   padding-top:15px;
