@@ -76,11 +76,11 @@
           </v-card>
         </v-stepper-content>
       </v-stepper-items>
-      <v-footer>
+      <!-- <v-footer>
         <v-btn class="continue-button" @click="advanceStep()">
           Continue
         </v-btn>
-      </v-footer>
+      </v-footer> -->
     </v-stepper>
   </div>
 </template>
