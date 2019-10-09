@@ -10,6 +10,7 @@ import SimpleTable from "./Tables/SimpleTable.vue";
 import AlphaDigTable from "./Tables/AlphaDigTable.vue";
 import ConfigureSourcesTable from "./Tables/ConfigureSourcesTable.vue";
 import GreenInsightsTable from "./Tables/GreenInsightsTable";
+import ESGDataTable from "./Tables/ESGDataTable.vue";
 
 export {
   ChartCard,
@@ -20,5 +21,6 @@ export {
   AlphaDigTable,
   SimpleTable,
   ConfigureSourcesTable,
-  GreenInsightsTable
+  GreenInsightsTable,
+  ESGDataTable
 };

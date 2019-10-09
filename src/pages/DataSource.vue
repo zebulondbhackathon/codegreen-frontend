@@ -1,26 +1,26 @@
 <template>
   <div class="content">
     <v-stepper v-model="e1">
-      <v-stepper-header id="stepperHeader">
-        <v-stepper-step color="white" :complete="e1 > 0" step="0">
+      <v-stepper-header id="stepperHeader" style="font-size: 20px; color: white !important;">
+        <v-stepper-step step="0" @click="e1 = 0">
           Source
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step :complete="e1 > 1" step="1">
+        <v-stepper-step step="1" @click="e1 = 1">
           Process
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="2">
+        <v-stepper-step step="2" @click="e1 = 2">
           Analyze
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="3">
+        <v-stepper-step step="3" @click="e1 = 3">
           Distribute
         </v-stepper-step>
       </v-stepper-header>
@@ -68,19 +68,56 @@
           </v-card>
         </v-stepper-content>
         <v-stepper-content step="2">
-          <v-card class="mb-12" color="grey lighten-1" height="500px">Analyze</v-card>
+          <v-card class="mb-12" color="grey lighten-1">
+            <div>
+              <md-card>
+                <md-card-header data-background-color="green">
+                  <h4 class="title">ESG Metrics</h4>
+                </md-card-header>
+                <md-card-content>
+                  <ESGData-table table-header-color="green"></ESGData-table>
+                </md-card-content>
+              </md-card>
+            </div>
+          </v-card>
+
         </v-stepper-content>
         <v-stepper-content step="3">
-          <v-card class="mb-12" color="grey lighten-1" height="500px">
-            Distribute
-          </v-card>
+          <div class="md-layout">
+            <div
+              class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
+            >
+              <md-card>
+                <md-card-header data-background-color="orange">
+                  <h4 class="title">Mercury</h4>
+                  <!-- <p class="category">New employees on 15th September, 2016</p> -->
+                </md-card-header>
+                <md-card-content>
+                  <v-img height="75%" width="75%" :src="mercuryImage" style="margin-left:auto; margin-right: auto;"/>
+                </md-card-content>
+              </md-card>
+            </div>
+            <div
+              class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
+            >
+              <md-card>
+                <md-card-header data-background-color="orange">
+                  <h4 class="title">DIF</h4>
+                  <!-- <p class="category">New employees on 15th September, 2016</p> -->
+                </md-card-header>
+                <md-card-content>
+                  <v-img style="margin-left:auto; margin-right: auto;" height="80%" width="80%" :src="DIFImage"/>
+                </md-card-content>
+              </md-card>
+            </div>
+          </div>
         </v-stepper-content>
       </v-stepper-items>
-      <v-footer>
+      <!-- <v-footer>
         <v-btn class="continue-button" @click="advanceStep()">
           Continue
         </v-btn>
-      </v-footer>
+      </v-footer> -->
     </v-stepper>
   </div>
 </template>
@@ -122,21 +159,24 @@
 </style>
 
 <script>
-import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable } from "@/components";
+import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable, ESGDataTable } from "@/components";
 
 export default {
   components: {
     AlphaDigTable,
     ConfigureSourcesTable,
     NavTabsCard,
-    NavTabsTable
+    NavTabsTable,
+    ESGDataTable
   },
   data() {
     return {
       e1: 0,
       alphaDig: "Alpha-DIG analyzing data...",
       quorum: ["Quorum MVA analyzing data...", "Rules applied...8/95", "MVA processing complete!"],
-      button: ''
+      button: '',
+      mercuryImage: require('@/assets/img/Mercury.jpg'),
+      DIFImage: require('@/assets/img/DIF.jpg')
     };
   },
   methods: {

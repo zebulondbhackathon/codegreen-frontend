@@ -13,7 +13,7 @@
       </a>
 
       <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
+        href="http://www.db.com"
         target="_blank"
         class="simple-text logo-normal"
       >
