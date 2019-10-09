@@ -174,7 +174,7 @@ export default {
       e1: 0,
       alphaDig: "Alpha-DIG analyzing data...",
       quorum: ["Quorum MVA analyzing data...", "Rules applied...8/95", "MVA processing complete!"],
-      button: '',
+      button: 'alphaDig',
       mercuryImage: require('@/assets/img/Mercury.jpg'),
       DIFImage: require('@/assets/img/DIF.jpg')
     };
