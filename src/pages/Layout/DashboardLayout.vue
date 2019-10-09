@@ -19,7 +19,7 @@
       </sidebar-link>     
       <sidebar-link to="/client-insights">
         <md-icon>explore</md-icon>
-        <p>Client Insights</p>
+        <p>Green Insights</p>
       </sidebar-link>
        <sidebar-link to="/dashboard">
         <md-icon>dashboard</md-icon>
