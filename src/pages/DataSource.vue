@@ -32,16 +32,14 @@
               <v-btn class="margin-horizontal content-button">Configure Sources</v-btn>
               <v-btn class="margin-horizontal content-button">Fetch Data</v-btn>
             </v-card-text>
-            <div
-              class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
-            >
+            <div>
               <md-card>
-                <md-card-header data-background-color="orange">
+                <!-- <md-card-header data-background-color="orange">
                   <h4 class="title">Employees Stats</h4>
                   <p class="category">New employees on 15th September, 2016</p>
-                </md-card-header>
+                </md-card-header> -->
                 <md-card-content>
-                  <!-- <ordered-table table-header-color="orange"></ordered-table> -->
+                  <configure-sources-table></configure-sources-table>
                 </md-card-content>
               </md-card>
             </div>
@@ -63,8 +61,8 @@
                   </md-card-content>
                 </md-card>
               </div>
-              <div v-if="button === 'quorum'">
-                <p v-for="item in quorum" class="typewriter">{{item}}</p>
+              <div v-if="button === 'quorum'" class="animated-component typewriter">
+                <p v-for="item in quorum">{{item}}</p>
               </div>
             </v-card>
           </v-card>
@@ -88,6 +86,9 @@
 </template>
 
 <style scoped>
+  .animated-component {
+    transition: opacity 1s ease-in-out;
+    }
   .center {
     text-align: center;
   }
@@ -121,11 +122,12 @@
 </style>
 
 <script>
-import { AlphaDigTable, NavTabsCard, NavTabsTable } from "@/components";
+import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable } from "@/components";
 
 export default {
   components: {
     AlphaDigTable,
+    ConfigureSourcesTable,
     NavTabsCard,
     NavTabsTable
   },
