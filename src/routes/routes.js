@@ -1,7 +1,7 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
-import ClientInsights from "@/pages/ClientInsights.vue";
+import GreenInsights from "@/pages/GreenInsights.vue";
 import DataSource from "@/pages/DataSource.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import TableList from "@/pages/TableList.vue";
@@ -34,9 +34,9 @@ const routes = [
         component: DataSource
       },
       {
-        path: "client-insights",
-        name: "Client Insights",
-        component: ClientInsights
+        path: "green-insights",
+        name: "Green Insights",
+        component: GreenInsights
       },
       {
         path: "user",

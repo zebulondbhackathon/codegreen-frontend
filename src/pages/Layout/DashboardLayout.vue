@@ -17,9 +17,9 @@
         <md-icon>grid_on</md-icon>
         <p>ESG Data Sourcing</p>
       </sidebar-link>     
-      <sidebar-link to="/client-insights">
+      <sidebar-link to="/green-insights">
         <md-icon>explore</md-icon>
-        <p>Client Insights</p>
+        <p>Green Insights</p>
       </sidebar-link>
        <sidebar-link to="/dashboard">
         <md-icon>dashboard</md-icon>
