@@ -9,6 +9,7 @@ import OrderedTable from "./Tables/OrderedTable.vue";
 import SimpleTable from "./Tables/SimpleTable.vue";
 import AlphaDigTable from "./Tables/AlphaDigTable.vue";
 import ConfigureSourcesTable from "./Tables/ConfigureSourcesTable.vue";
+import ESGDataTable from "./Tables/ESGDataTable.vue";
 
 export {
   ChartCard,
@@ -18,5 +19,6 @@ export {
   OrderedTable,
   AlphaDigTable,
   SimpleTable,
-  ConfigureSourcesTable
+  ConfigureSourcesTable,
+  ESGDataTable
 };
