@@ -68,7 +68,19 @@
           </v-card>
         </v-stepper-content>
         <v-stepper-content step="2">
-          <v-card class="mb-12" color="grey lighten-1" height="500px">Analyze</v-card>
+          <v-card class="mb-12" color="grey lighten-1" height="500px">
+            <div>
+              <md-card>
+                <md-card-header data-background-color="green">
+                  <h4 class="title">ESG Metrics</h4>
+                </md-card-header>
+                <md-card-content>
+                  <ESGData-table table-header-color="green"></ESGData-table>
+                </md-card-content>
+              </md-card>
+            </div>
+          </v-card>
+
         </v-stepper-content>
         <v-stepper-content step="3">
           <div class="md-layout">
@@ -147,14 +159,15 @@
 </style>
 
 <script>
-import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable } from "@/components";
+import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable, ESGDataTable } from "@/components";
 
 export default {
   components: {
     AlphaDigTable,
     ConfigureSourcesTable,
     NavTabsCard,
-    NavTabsTable
+    NavTabsTable,
+    ESGDataTable
   },
   data() {
     return {
