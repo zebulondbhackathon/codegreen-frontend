@@ -1,23 +1,162 @@
 <template>
   <div class="content">
-    <div class="md-layout">
-      <div class="md-layout-item md-medium-size-100 md-size-66">
-        <edit-profile-form data-background-color="green"> </edit-profile-form>
-      </div>
-      <div class="md-layout-item md-medium-size-100 md-size-33">
-        <user-card> </user-card>
-      </div>
-    </div>
+    <v-stepper v-model="e1">
+      <v-stepper-header id="stepperHeader">
+        <v-stepper-step color="white" :complete="e1 > 0" step="0" @click="e1 = 0">
+          Source
+        </v-stepper-step>
+
+        <v-divider></v-divider>
+
+        <v-stepper-step :complete="e1 > 1" step="1" @click="e1 = 1">
+          Process
+        </v-stepper-step>
+
+        <v-divider></v-divider>
+
+        <v-stepper-step step="2" @click="e1 = 2">
+          Analyze
+        </v-stepper-step>
+
+        <v-divider></v-divider>
+
+        <v-stepper-step step="3" @click="e1 = 3">
+          Distribute
+        </v-stepper-step>
+      </v-stepper-header>
+
+      <v-stepper-items>
+        <v-stepper-content step="0">
+          <v-card class="mb-12" color="grey lighten-1" height="500px">
+            <v-card-text class="center">
+              <v-btn class="margin-horizontal content-button">Configure Sources</v-btn>
+              <v-btn class="margin-horizontal content-button">Fetch Data</v-btn>
+            </v-card-text>
+            <div>
+              <md-card>
+                <!-- <md-card-header data-background-color="orange">
+                  <h4 class="title">Employees Stats</h4>
+                  <p class="category">New employees on 15th September, 2016</p>
+                </md-card-header> -->
+                <md-card-content>
+                  <configure-sources-table></configure-sources-table>
+                </md-card-content>
+              </md-card>
+            </div>
+          </v-card>
+        </v-stepper-content>
+        <v-stepper-content step="1">
+          <v-card class="mb-12" color="grey lighten-1" height="500px">
+            <v-card class="mb-12" color="grey lighten-1" height="500px">
+              <v-card-text class="center">
+                <v-btn class="margin-horizontal content-button" @click="button = 'alphaDig'">Alpha-DIG</v-btn>
+                <v-btn class="margin-horizontal content-button" @click="button = 'quorum'">Quorum MVA</v-btn>
+                <v-btn class="margin-horizontal content-button">Other DQ</v-btn>
+              </v-card-text>
+              <div v-if="button === 'alphaDig'">
+                <p id="alphaDig" class="typewriter">{{alphaDig}}</p>
+                <md-card>
+                  <md-card-content>
+                    <alpha-dig-table table-header-color="orange"></alpha-dig-table>
+                  </md-card-content>
+                </md-card>
+              </div>
+              <div v-if="button === 'quorum'" class="animated-component typewriter">
+                <p v-for="item in quorum">{{item}}</p>
+              </div>
+            </v-card>
+          </v-card>
+        </v-stepper-content>
+        <v-stepper-content step="2">
+          <v-card class="mb-12" color="grey lighten-1" height="500px">Analyze</v-card>
+        </v-stepper-content>
+        <v-stepper-content step="3">
+          <v-card class="mb-12" color="grey lighten-1" height="500px">
+            Distribute
+          </v-card>
+        </v-stepper-content>
+      </v-stepper-items>
+      <!-- <v-footer>
+        <v-btn class="continue-button" @click="advanceStep()">
+          Continue
+        </v-btn>
+      </v-footer> -->
+    </v-stepper>
   </div>
 </template>
 
+<style scoped>
+  .animated-component {
+    transition: opacity 1s ease-in-out;
+    }
+  .center {
+    text-align: center;
+  }
+  .content-button {
+    background-color: green !important;
+    color: white !important;
+  }
+  .continue-button {
+    background-color: #4caf50 !important;
+    color: white;
+  }
+  .margin-horizontal {
+    margin: 0 20px;
+  }
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  #stepperHeader {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+  }
+  #stepperHeader > div > span {
+    color: white;
+  }
+</style>
+
 <script>
-import { EditProfileForm, UserCard } from "@/pages";
+import { AlphaDigTable, ConfigureSourcesTable, NavTabsCard, NavTabsTable } from "@/components";
 
 export default {
   components: {
-    EditProfileForm,
-    UserCard
+    AlphaDigTable,
+    ConfigureSourcesTable,
+    NavTabsCard,
+    NavTabsTable
+  },
+  data() {
+    return {
+      e1: 0,
+      alphaDig: "Alpha-DIG analyzing data...",
+      quorum: ["Quorum MVA analyzing data...", "Rules applied...8/95", "MVA processing complete!"],
+      button: ''
+    };
+  },
+  methods: {
+    advanceStep() {
+      console.log('advanced')
+      this.e1++;
+      if (this.e1 > 3) {
+        this.e1 = 0;
+      }
+    },
+    typeWriter(value) {
+      let speed = 50;
+      let i = 0;
+      if (i < this.alphaDig.length) {
+        document.getElementById("alphaDig").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+      button = value;
+    }
   }
 };
 </script>
