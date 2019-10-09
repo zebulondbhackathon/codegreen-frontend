@@ -2,25 +2,25 @@
   <div class="content">
     <v-stepper v-model="e1">
       <v-stepper-header id="stepperHeader">
-        <v-stepper-step color="white" :complete="e1 > 0" step="0">
+        <v-stepper-step color="white" :complete="e1 > 0" step="0" @click="e1 = 0">
           Source
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step :complete="e1 > 1" step="1">
+        <v-stepper-step :complete="e1 > 1" step="1" @click="e1 = 1">
           Process
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="2">
+        <v-stepper-step step="2" @click="e1 = 2">
           Analyze
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="3">
+        <v-stepper-step step="3" @click="e1 = 3">
           Distribute
         </v-stepper-step>
       </v-stepper-header>
