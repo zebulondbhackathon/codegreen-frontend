@@ -87,13 +87,13 @@
             <div
               class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
             >
-              <md-card style="height: 250px">
+              <md-card>
                 <md-card-header data-background-color="orange">
                   <h4 class="title">Mercury</h4>
                   <!-- <p class="category">New employees on 15th September, 2016</p> -->
                 </md-card-header>
                 <md-card-content>
-                  <v-img :src="mercuryImage"/>
+                  <v-img height="75%" width="75%" :src="mercuryImage" style="margin-left:auto; margin-right: auto;"/>
                 </md-card-content>
               </md-card>
             </div>
@@ -106,7 +106,7 @@
                   <!-- <p class="category">New employees on 15th September, 2016</p> -->
                 </md-card-header>
                 <md-card-content>
-                  <v-img :src="DIFImage"/>
+                  <v-img style="margin-left:auto; margin-right: auto;" height="75%" width="75%" :src="DIFImage"/>
                 </md-card-content>
               </md-card>
             </div>
