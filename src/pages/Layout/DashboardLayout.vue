@@ -45,9 +45,9 @@
         <md-icon></md-icon>
         <p>Smart Beta Strategy</p>
       </sidebar-link>
-      <sidebar-link to="https://www.db.com/cr/index_en.htm" class="active-pro">
-        <md-icon>spa</md-icon>
-        <p>DB Sustainability Hack</p>
+      <sidebar-link to="" class="active-pro">
+        <span @click="navigate('https://www.db.com/newsroom_news/2019/dbtechhackathon-2019-social-media-wall-en-11606.htm')"><md-icon>spa</md-icon>
+        <p>DB Sustainability Hack</p></span>
       </sidebar-link>
     </side-bar>
 
@@ -64,6 +64,11 @@
 #sideBarLinks > li.sublink > a {
   background: unset !important;
 }
+#sideBarLinks > li.active-pro > a {
+  background-color: unset !important;
+}
+
+
 </style>
 <script>
 import TopNavbar from "./TopNavbar.vue";
@@ -77,6 +82,11 @@ export default {
     DashboardContent,
     ContentFooter,
     MobileMenu
+  },
+  methods: {
+    navigate(url) {
+      window.open(url, '_blank');
+    }
   }
 };
 </script>
