@@ -34,10 +34,6 @@
             </v-card-text>
             <div>
               <md-card>
-                <!-- <md-card-header data-background-color="orange">
-                  <h4 class="title">Employees Stats</h4>
-                  <p class="category">New employees on 15th September, 2016</p>
-                </md-card-header> -->
                 <md-card-content>
                   <configure-sources-table></configure-sources-table>
                 </md-card-content>
@@ -123,6 +119,14 @@
 </template>
 
 <style scoped>
+  #stepperHeader > div:nth-child(3) > span {
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .v-stepper__step__step {
+    height: 50px !important;
+    width: 50px !important;
+  }
   .animated-component {
     transition: opacity 1s ease-in-out;
     }
