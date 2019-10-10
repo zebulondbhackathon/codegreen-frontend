@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    	<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+.azure-tag {
+		font-family: 'Arya', serif;
+		font-size: 1.3em;
+		margin: 0 0% 0 9%;
+		margin-bottom: -2em;
+	}
+	.azure-logo {
+		width: 1.2em;
+	}
+	.logo-main {
+		width: 80%;
+		font-family: 'Teko', sans-serif;
+		font-size: 7.5em;
+	}
+	.logo-image {
+		width: 4.8em;
+		padding-left: 1em;
+	}
+	#h_line {
+		width:31em; height:0.25em; background: #000;
+		margin-left: 1.5em;
+		margin-top: -2.8em;
+	}
+	.logo-sub {
+		display: block;
+		width: 70%;
+		font-family: 'Teko', sans-serif;
+		color: gray;
+		font-size: 4.45em;
+		margin-top: -0.2em;
+	}
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -23,7 +59,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #737373;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -100,32 +136,65 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.blocks {
+    width:100%;
+    text-align:center;
+    font-family: 'Ropa Sans', sans-serif;
+
+    font-size: 2em;
+    padding-top: 400px;
+}
+
+#slideTwo {
+    width:100%;
+    text-align:center;
+    font-family: 'Ropa Sans', sans-serif;
+    padding-top: 50px;
+    font-size: 2em;
+}
 </style>
 </head>
 <body>
 
 <div class="slideshow-container" style="width:100%; max-width:100%">
 
-<div class="mySlides fade" style="background-color:#eeeeeee; height:666px; width:100%;">
+<div class="mySlides fade" style="background-color:white; height:666px; width:100%;">
   <div id="home">
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div align="center">
-          <div id="logo"> <img style="width:100%; height:100%" src="Calimetrix-new4.jpg" alt="cali logo"></div>
-          
+          <!-- <div id="logo"> <img style="width:100%; height:100%" src="Calimetrix-new4.jpg" alt="cali logo"></div>
+           -->
+           <div class="azure-tag">
+                <span>Powered by </span><img src="Azure.png" class="azure-logo"><span><b> 
+            Microsoft Azure</b></span>
+            </div>
+            <span class="logo-main">CAELIMETRIX</span>
+            <img src="image.png" class="logo-image">
+            <div id="h_line"></div>
+            <span class="logo-sub">ESG DATA FOR ENTERPRISE</span>
         </div>
       </a>
     </div>
   </div>
 
 </div>
-
+<div class="mySlides fade" style="background-color:white; height:666px; width:100%;">
+  <div id="slideTwo">Caelimetrix provides:</div>
+  <div style="display: inline-flex; width:100%">
+  <div class="blocks">Data Standardization</div>
+    <div class="blocks"> Multiple Vendor Sourcing</div>
+    <div class="blocks">Accuracy and Unbias</div>
+    <div class="blocks">Data Volumes</div>
+    </div>
+</div>
 <div class="mySlides fade" style="background-color:white; height:666px; width:100%;">
     <div id="home">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
           <div align="center">
-            <div id="logo"> <img style="width:100%; height:100%" src="flowdiagram.jpg" alt="cali logo"></div>
+            <div id="logo"> <img style="margin-top:150px;width:80%; height:80%" src="dataflow4.jpg" alt="cali logo"></div>
             
           </div>
         </a>
@@ -135,11 +204,7 @@ img {vertical-align: middle;}
   </div>
 
 
-<div class="mySlides fade" style="background-color:yellow; height:700px; width:100%;">
-  <div class="numbertext">3 / 3</div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>

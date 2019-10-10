@@ -31,7 +31,7 @@
       </div>
       <div></div>
       <div id="ticker">
-      <div id="logo"> <img style="margin-top:-20px;" src="gticker.png" alt="Italian Trulli"></div>
+      <div id="logo"> <img style="margin-top:-30px;" src="gticker.png" alt="Italian Trulli"></div>
       <!-- <button onclick="document.getElementById('ticker p').style.animation-play-state = 'paused'">PAUSE</button>-->
       <p>
         <span @click="showTickerInfo('MSCI', 'Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)')"><span class="names"> 
@@ -129,10 +129,12 @@ export default {
   float:left;
   z-index:10;
   width:120px;
-  height:100px;
+  height:38px;
   padding-top:8px;
   padding-bottom:5px;
-  margin-top:-15px;
+  margin-top:-38px;
+  margin-left:20px;
+  border-radius:5px;
 }
 
 #ticker {
