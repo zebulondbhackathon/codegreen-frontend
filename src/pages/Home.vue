@@ -1,6 +1,6 @@
 <template>
  <!--<div id="home"></div>-->
-   <div class="content">
+   <div>
    <!-- <div id="home">
      <div class="logo">
        <a href="#" class="simple-text logo-mini">
@@ -14,7 +14,7 @@
      <div>
        
       <div>
-          <iframe src="/carousel.html" frameBorder="0"  width="100%" style="height: 800px"></iframe>
+          <iframe src="/carousel.html" frameBorder="0"  width="100%" style="height: 710px"></iframe>
       </div>
      </div>
    <v-container>
