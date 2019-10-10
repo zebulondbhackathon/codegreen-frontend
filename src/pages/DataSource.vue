@@ -2,31 +2,31 @@
   <div class="content">
     <v-stepper v-model="e1">
       <v-stepper-header id="stepperHeader" style="font-size: 20px; color: white !important; background:#0000ff00; width: 80%; margin: auto;">
-        <v-stepper-step step="0" @click="e1 = 0">
+        <v-stepper-step step="1" @click="e1 = 1">
           Source
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="1" @click="e1 = 1" > <!--style="background-color: #2053bb;width: 40px;height: 40px; font-size: 18px;"-->
+        <v-stepper-step step="2" @click="e1 = 2" > <!--style="background-color: #2053bb;width: 40px;height: 40px; font-size: 18px;"-->
           Process
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="2" @click="e1 = 2">
+        <v-stepper-step step="3" @click="e1 = 3">
           Analyze
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="3" @click="e1 = 3">
+        <v-stepper-step step="4" @click="e1 = 4">
           Distribute
         </v-stepper-step>
       </v-stepper-header>
 
       <v-stepper-items>
-        <v-stepper-content step="0">
+        <v-stepper-content step="1">
           <v-card class="mb-12" color="grey lighten-1" height="500px">
             <v-card-text class="center">
               <v-btn class="margin-horizontal content-button">Configure Sources</v-btn>
@@ -41,7 +41,7 @@
             </div>
           </v-card>
         </v-stepper-content>
-        <v-stepper-content step="1">
+        <v-stepper-content step="2">
           <v-card class="mb-12" color="grey lighten-1" height="500px">
             <v-card class="mb-12" color="grey lighten-1" height="500px">
               <v-card-text class="center">
@@ -63,7 +63,7 @@
             </v-card>
           </v-card>
         </v-stepper-content>
-        <v-stepper-content step="2">
+        <v-stepper-content step="3">
           <v-card class="mb-12" color="grey lighten-1">
             <div>
               <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
@@ -84,7 +84,7 @@
           </v-card>
 
         </v-stepper-content>
-        <v-stepper-content step="3">
+        <v-stepper-content step="4">
           <div class="md-layout">
             <div
               class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"

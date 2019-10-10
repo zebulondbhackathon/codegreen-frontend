@@ -75,7 +75,7 @@
             </li>
 
             <md-list-item href="#/user">
-               <v-avatar>
+               <v-avatar style="height: 25px; min-width: 48px; width: 25px;">
       <img
         src="https://cdn.vuetifyjs.com/images/john.jpg"
         alt="John"
