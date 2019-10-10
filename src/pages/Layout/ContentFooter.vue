@@ -78,19 +78,18 @@ export default {};
 
 #logo {
   background-color: #033103;
-  border-radius:20px;
   float:left;
-  margin-top:-40px;
-  z-index:23;
+  z-index:10;
   width:120px;
-  height:40px;
-  margin-left:40px;
-  padding-top:0px;
+  height:100px;
+  padding-top:8px;
+  padding-bottom:5px;
+  margin-top:-15px;
 }
 
 #ticker {
   position: fixed;
-  z-index:3;
+  z-index:1;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -98,6 +97,7 @@ export default {};
   color: white;
   height:60px;
   padding-top:15px;
+  margin-top:-20px;
   /*overflow:hidden;*/
 
 }
@@ -124,8 +124,7 @@ export default {};
  position: absolute;
  margin: 0;
  text-align: right;
- webkit-animation-play-state: running;
-
+ 
 
 
 
