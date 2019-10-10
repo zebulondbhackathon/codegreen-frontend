@@ -17,34 +17,34 @@
         <md-icon>grid_on</md-icon>
         <p>ESG Data Sourcing</p>
       </sidebar-link>     
-      <sidebar-link to="/client-insights">
+      <sidebar-link to="/green-insights">
         <md-icon>explore</md-icon>
         <p>Green Insights</p>
       </sidebar-link>
-       <sidebar-link to="/dashboard">
-        <md-icon>dashboard</md-icon>
-        <p>Dashboard</p>
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Portfolio Analysis</p>
       </sidebar-link>
-      <sidebar-link to="/table">
-        <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Trading Insights</p>
       </sidebar-link>
-      <!-- <sidebar-link to="/typography">
-        <md-icon>library_books</md-icon>
-        <p>Typography</p>
-      </sidebar-link> -->
-      <!-- <sidebar-link to="/icons">
-        <md-icon>bubble_chart</md-icon>
-        <p>Icons</p>
-      </sidebar-link> -->
-      <!-- <sidebar-link to="/maps">
-        <md-icon>location_on</md-icon>
-        <p>Maps</p>
-      </sidebar-link> -->
-      <!-- <sidebar-link to="/notifications">
-        <md-icon>notifications</md-icon>
-        <p>Notifications</p>
-      </sidebar-link> -->
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Green Bonds</p>
+      </sidebar-link>
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Counterparty Risk</p>
+      </sidebar-link>
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Research</p>
+      </sidebar-link>
+      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+        <md-icon></md-icon>
+        <p>Smart Beta ESG Strategy</p>
+      </sidebar-link>
       <sidebar-link to="https://www.db.com/cr/index_en.htm" class="active-pro">
         <md-icon>spa</md-icon>
         <p>DB Sustainability Hack</p>

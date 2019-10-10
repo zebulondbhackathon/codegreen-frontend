@@ -9,6 +9,7 @@ import OrderedTable from "./Tables/OrderedTable.vue";
 import SimpleTable from "./Tables/SimpleTable.vue";
 import AlphaDigTable from "./Tables/AlphaDigTable.vue";
 import ConfigureSourcesTable from "./Tables/ConfigureSourcesTable.vue";
+import GreenInsightsTable from "./Tables/GreenInsightsTable";
 import ESGDataTable from "./Tables/ESGDataTable.vue";
 
 export {
@@ -20,5 +21,6 @@ export {
   AlphaDigTable,
   SimpleTable,
   ConfigureSourcesTable,
+  GreenInsightsTable,
   ESGDataTable
 };
