@@ -5,7 +5,7 @@
     :data-image="backgroundImage"
     :style="sidebarStyle"
   >
-    <div class="logo">
+    <div class="logo logo-custom">
       <a href="#" class="simple-text logo-mini">
         <div>
           <img :src="imgLogo" alt="" />
@@ -93,12 +93,8 @@ export default {
   .nav-mobile-menu {
     display: none;
   }
-  .logo {
+  .logo-custom {
     background: linear-gradient(180deg, #3a633c, #ffffff00);
   }
-  #sideBarLinks > li {
-    /* margin-top: -5px; */
-  }
-
 }
 </style>

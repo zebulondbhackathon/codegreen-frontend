@@ -18,33 +18,33 @@
         <p>ESG Data Sourcing</p>
       </sidebar-link>     
       <sidebar-link to="/green-insights">
-        <md-icon>explore</md-icon>
+        <md-icon>local_florist</md-icon>
         <p>Green Insights</p>
       </sidebar-link>
-      <!-- <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Portfolio Analysis</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Trading Insights</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Green Bonds</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Counterparty Risk</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Research</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <sidebar-link class="sublink" style="margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
-        <p>Smart Beta ESG Strategy</p>
-      </sidebar-link> -->
+        <p>Smart Beta Strategy</p>
+      </sidebar-link>
       <sidebar-link to="https://www.db.com/cr/index_en.htm" class="active-pro">
         <md-icon>spa</md-icon>
         <p>DB Sustainability Hack</p>
@@ -60,7 +60,11 @@
     </div>
   </div>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+#sideBarLinks > li.sublink > a {
+  background: unset !important;
+}
+</style>
 <script>
 import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";

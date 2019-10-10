@@ -1,7 +1,8 @@
 <template>
   <md-card class="md-card-profile">
     <div class="md-card-avatar">
-      <img class="img" :src="cardUserImage" />
+      <img 
+      src="https://cdn.vuetifyjs.com/images/john.jpg">
     </div>
 
     <md-card-content>
