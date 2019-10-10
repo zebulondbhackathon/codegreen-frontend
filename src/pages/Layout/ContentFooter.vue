@@ -53,10 +53,10 @@ Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc m
              
     </div>
     <v-dialog v-model="showDialog" persistent max-width="290" :class="showDialog ? 'dialog' : ''">
-      <v-card style="background-color: grey">
-        <v-card-title class="headline" style="background-color: #f2ad22;">{{dialogTitle}}</v-card-title>
-        <v-card-text>{{dialogText}}</v-card-text>
-        <v-card-actions style="background-color: orange">
+      <v-card style="background-color: #e2e2e2">
+        <v-card-title class="headline" style="background-color: #01579B; color: white;">{{dialogTitle}}</v-card-title>
+        <v-card-text style="margin-top: 5px; color: black;">{{dialogText}}</v-card-text>
+        <v-card-actions style="background-color: #01579B">
           <div class="flex-grow-1" style="margin-left: auto !important"></div>
           <v-btn class="close-button" text @click="showDialog = false">Close</v-btn>
         </v-card-actions>
@@ -108,8 +108,8 @@ export default {
 </script>
 <style>
 .close-button {
-  background-color: green !important;
-  color: white !important;
+  background-color: #80D8FF !important;
+  /* color: white !important; */
 }
 .dialog {
   /* background-color: orange; */
