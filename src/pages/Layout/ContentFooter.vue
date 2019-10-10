@@ -33,13 +33,14 @@
       <div id="ticker">
       <div id="logo"> <img style="margin-top:-20px;" src="gticker.png" alt="Italian Trulli"></div>
       <!-- <button onclick="document.getElementById('ticker p').style.animation-play-state = 'paused'">PAUSE</button>-->
-      <p><span class="names" onlcick="alert('Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)')"> 
+      <p>
+        <span @click="showTickerInfo('MSCI', 'Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)')"><span class="names"> 
           [ MSCI ] </span>
-          ESG Ratings Change for AAPL: <span style="color:#EE6352;">AAA to AA</span> - - - 
-      <span class="names" onclick="alert('Exxon today announced that it has successfully settled claims from the oil spill off Ireland, LSE reports')"> 
+          ESG Ratings Change for AAPL: <span style="color:#EE6352;">AAA to AA</span> - - - </span>
+        <span class="names" @click="showTickerInfo('Bloomberg', 'Exxon today announced that it has successfully settled claims from the oil spill off Ireland, LSE reports')"> 
           [ Bloomberg ] </span> 
           Exxon XOM.N settles oil spill claims. Stock rises - - - 
-      <span class="names" onclick="alert('B2Gold Corp. TSX:BTO will replace New Gold Inc. TSX:NGD on the Jantzi Social Index effective as of the opening of markets on Monday, September 23, 2019')"> 
+        <span class="names" @click="showTickerInfo('Sustainalytics', 'B2Gold Corp. TSX:BTO will replace New Gold Inc. TSX:NGD on the Jantzi Social Index effective as of the opening of markets on Monday, September 23, 2019')"> 
           [ Sustainalytics ] </span>
           B2Gold Corp. Added to Jantzi Social Index. 
       </p>
@@ -49,24 +50,71 @@ Bloomberg,Contribution of renewables increases to 11% in the US,Renewable energy
 Reuters,Google parent Alphabet Inc fails on GHG emisssion targets,Alphabet Inc missed its Green House Gas emission targets which could attract aire of regulators in Europe</p>-->
              </div>
 
-             <div class="ticker-wrap">
-<div class="ticker">
-  <div class="ticker__item">Letterpress chambray brunch.</div>
-  <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-  <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
-  <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
-
-</div>
-</div>
+             
     </div>
+    <v-dialog v-model="showDialog" persistent max-width="290" :class="showDialog ? 'dialog' : ''">
+      <v-card style="background-color: #e2e2e2">
+        <v-card-title class="headline" style="background-color: #01579B; color: white;">{{dialogTitle}}</v-card-title>
+        <v-card-text style="margin-top: 5px; color: black;">{{dialogText}}</v-card-text>
+        <v-card-actions style="background-color: #01579B">
+          <div class="flex-grow-1" style="margin-left: auto !important"></div>
+          <v-btn class="close-button" text @click="showDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </footer>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      showDialog: false,
+      dialogTitle: '',
+      dialogText: '',
+      tickerInfo: [
+        {
+          id: 0,
+          tickerName: 'MSCI',
+          tickerUpdate: 'ESG Ratings Change for AAPL: <span style="color:#EE6352;">AAA to AA</span> - - - ',
+          tickerAlert: 'Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)'
+        },
+        {
+          id: 1,
+          tickerName: 'Bloomberg',
+          tickerUpdate: 'xxon XOM.N settles oil spill claims. Stock rises - - - ',
+          tickerAlert: 'Exxon today announced that it has successfully settled claims from the oil spill off Ireland, LSE reports'
+        },
+        {
+          id: 2,
+          tickerName: 'Sustainalytics',
+          tickerUpdate: 'B2Gold Corp. Added to Jantzi Social Index.',
+          tickerAlert: 'B2Gold Corp. TSX:BTO will replace New Gold Inc. TSX:NGD on the Jantzi Social Index effective as of the opening of markets on Monday, September 23, 2019'
+        }
+      ]
+    }
+  },
+  methods: {
+    showTickerInfo(title, text) {
+      console.log('clicked')
+      this.showDialog = true;
+      this.dialogTitle = title;
+      this.dialogText = text;
+      // this.dialogText = ;
+    }
+  }
+};
 
 
 </script>
 <style>
+.close-button {
+  background-color: #80D8FF !important;
+  /* color: white !important; */
+}
+.dialog {
+  /* background-color: orange; */
+  display: unset !important;
+}
 
 .names {
   color:#CBE896;

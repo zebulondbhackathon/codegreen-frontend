@@ -5,8 +5,8 @@
         <md-table-cell md-label="RIC">{{ item.ric }}</md-table-cell>
         <md-table-cell md-label="Company Name">{{ item.companyName }}</md-table-cell>
         <md-table-cell md-label="Sector">{{ item.sector }}</md-table-cell>
-        <md-table-cell md-label="CSG Rating">{{ item.csgRating }}</md-table-cell>
-        <md-table-cell md-label="CSG Score">{{ item.csgScore }}</md-table-cell>
+        <md-table-cell md-label="ESG Rating">{{ item.csgRating }}</md-table-cell>
+        <md-table-cell md-label="ESG Score">{{ item.csgScore }}</md-table-cell>
         <md-table-cell md-label="Carbon Emissions">{{ item.carbonEmissions }}</md-table-cell>
         <md-table-cell md-label="GHG Emission">{{ item.ghgEmission }}</md-table-cell>
       </md-table-row>
@@ -88,7 +88,7 @@ export default {
   },
   // Fetches posts when the component is created.
   created() {
-    axios.get(`http://codegreen-backend.eastus.cloudapp.azure.com:8060/esgdata/all`)
+    axios.get(`https://codegreen-backend.eastus.cloudapp.azure.com:8060/esgdata/all`)
     .then(response => {
       // JSON responses are automatically parsed.
       this.users = response.data

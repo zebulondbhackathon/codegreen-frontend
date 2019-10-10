@@ -25,7 +25,7 @@
 
 <style scoped>
   .row-color {
-    background-color: orange !important;
+    /* background-color: orange !important; */
   }
 </style>
 
