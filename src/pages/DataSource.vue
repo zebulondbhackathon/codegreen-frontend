@@ -53,7 +53,7 @@
                 <p id="alphaDig" class="typewriter">{{alphaDig}}</p>
                 <md-card>
                   <md-card-content>
-                    <alpha-dig-table table-header-color="orange"></alpha-dig-table>
+                    <alpha-dig-table></alpha-dig-table>
                   </md-card-content>
                 </md-card>
               </div>

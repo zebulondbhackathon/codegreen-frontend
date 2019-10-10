@@ -25,7 +25,7 @@ export default {
   props: {
     tableHeaderColor: {
       type: String,
-      default: "orange"
+      default: "black"
     }
   },
   data() {
