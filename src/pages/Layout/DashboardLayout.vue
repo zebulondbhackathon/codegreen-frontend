@@ -21,7 +21,7 @@
         <md-icon>explore</md-icon>
         <p>Green Insights</p>
       </sidebar-link>
-      <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
+      <!-- <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Portfolio Analysis</p>
       </sidebar-link>
@@ -44,7 +44,7 @@
       <sidebar-link style="margin-left: 25px; margin-top: -20px; margin-bottom: -10px;" to="/green">
         <md-icon></md-icon>
         <p>Smart Beta ESG Strategy</p>
-      </sidebar-link>
+      </sidebar-link> -->
       <sidebar-link to="https://www.db.com/cr/index_en.htm" class="active-pro">
         <md-icon>spa</md-icon>
         <p>DB Sustainability Hack</p>

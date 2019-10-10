@@ -22,7 +22,7 @@
     </div>
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
-      <md-list class="nav">
+      <md-list class="nav" id="sideBarLinks">
         <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
         <slot>
           <sidebar-link
@@ -93,5 +93,12 @@ export default {
   .nav-mobile-menu {
     display: none;
   }
+  .logo {
+    background: linear-gradient(180deg, #3a633c, #ffffff00);
+  }
+  #sideBarLinks > li {
+    /* margin-top: -5px; */
+  }
+
 }
 </style>
