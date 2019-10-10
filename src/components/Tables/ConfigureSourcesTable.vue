@@ -1,6 +1,6 @@
 <template>
   <div>
-    <md-table v-model="users" :table-header-color="tableHeaderColor">
+    <md-table id="configureSourcesTable" v-model="users" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="item.row === 1 ? 'row-color' : ''">
         <md-table-cell md-label="Data Source Name">{{ item.name }}</md-table-cell>
         <md-table-cell md-label="Data Type">{{ item.type }}</md-table-cell>
@@ -23,9 +23,9 @@
   </div>
 </template>
 
-<style scoped>
-  .row-color {
-    background-color: orange !important;
+<style>
+  #configureSourcesTable > div > table > thead > tr > th > div > div {
+    font-weight: bold !important;
   }
 </style>
 
@@ -35,7 +35,7 @@ export default {
   props: {
     tableHeaderColor: {
       type: String,
-      default: "orange"
+      default: "black"
     }
   },
   data() {
