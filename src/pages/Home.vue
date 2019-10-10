@@ -5,9 +5,9 @@
      <div class="logo">
        <a href="#" class="simple-text logo-mini">
          <div align="center">
-           <img src="@/assets/img/Caelimetrixlogo2.png" alt="" height="350px" width="350px" />
+           <img src="@/assets/img/Caelimetrix-new3.jpg" alt="" height="1623" width="677" />
          </div>
-         <span><h1 align="center">Welcome to Caelimetrix</h1></span>
+         <span><h1 align="center"></h1></span>
        </a>
      </div>
    </div>
