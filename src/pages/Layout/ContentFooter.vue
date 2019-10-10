@@ -36,7 +36,7 @@
       <p>
         <span @click="showTickerInfo('MSCI', 'Following unsatisfactory regulatory comments on Apple’s disclosure standards relating to Carbon emissions, MSCI announced today that Apple’s rating is revised downwards from AAA (Leader) to  A (Average)')"><span class="names"> 
           [ MSCI ] </span>
-          ESG Ratings Change for AAPL: <span style="color:#EE6352;">AAA to AA</span> - - - </span>
+          ESG Ratings Change for AAPL: <span style="color:#dd220b; font-weight: bolder;">AAA to AA</span> - - - </span>
         <span class="names" @click="showTickerInfo('Bloomberg', 'Exxon today announced that it has successfully settled claims from the oil spill off Ireland, LSE reports')"> 
           [ Bloomberg ] </span> 
           Exxon XOM.N settles oil spill claims. Stock rises - - - 
@@ -129,7 +129,7 @@ body > div > div.main-panel > footer > div.v-dialog__container.dialog > div > di
 }
 
 #logo {
-  background-color: #033103;
+  background-color: #032b03;
   float:left;
   z-index:10;
   width:120px;
@@ -147,7 +147,7 @@ body > div > div.main-panel > footer > div.v-dialog__container.dialog > div > di
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:#3e7740 ;
+  background-color:#4b914d ;
   color: white;
   height:60px;
   padding-top:15px;
