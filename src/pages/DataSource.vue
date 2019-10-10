@@ -66,6 +66,12 @@
         <v-stepper-content step="2">
           <v-card class="mb-12" color="grey lighten-1">
             <div>
+              <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+                <md-card>
+                  <iframe src="/eafilters.html" frameBorder="0" scrolling="no" height="500" width="100%" style="height: 145px"></iframe>
+                </md-card>
+              </div>
+
               <md-card>
                 <md-card-header data-background-color="green">
                   <h4 class="title">ESG Metrics</h4>
