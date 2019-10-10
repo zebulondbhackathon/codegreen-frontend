@@ -126,6 +126,11 @@
 
 <style>
 
+#stepperHeader > div.v-stepper__step.v-stepper__step--active > div {
+  font-size:24px;
+  font-weight:bold;
+}
+
 #stepperHeader > div:hover {
   cursor:pointer;
 }
