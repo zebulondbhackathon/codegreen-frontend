@@ -1,14 +1,14 @@
 <template>
   <div class="content">
     <v-stepper v-model="e1">
-      <v-stepper-header id="stepperHeader" style="font-size: 20px; color: white !important;">
+      <v-stepper-header id="stepperHeader" style="font-size: 20px; color: white !important; background:#0000ff00; width: 80%; margin: auto;">
         <v-stepper-step step="0" @click="e1 = 0">
           Source
         </v-stepper-step>
 
         <v-divider></v-divider>
 
-        <v-stepper-step step="1" @click="e1 = 1">
+        <v-stepper-step step="1" @click="e1 = 1" > <!--style="background-color: #2053bb;width: 40px;height: 40px; font-size: 18px;"-->
           Process
         </v-stepper-step>
 
@@ -124,15 +124,43 @@
   </div>
 </template>
 
-<style scoped>
-  #stepperHeader > div:nth-child(3) > span {
-    height: 100px !important;
-    width: 100px !important;
-  }
+<style>
+
+#stepperHeader > div:hover {
+  cursor:pointer;
+}
+
+#stepperHeader > hr {
+      color:#154b9c!important;
+}
+
+.theme--light.v-stepper .v-stepper__label {
+    color:#154b9c!important;
+}
+
+#stepperHeader > div > span {
+  background-color: #154b9c;
+  font-size:18px;
+}
+
+.theme--light.v-stepper {
+    background: #fff0!important;
+}
+
+.theme--light.v-card {
+    background-color: #fff0!important;
+    color: rgba(0,0,0,.87);
+}
+
+.v-stepper, .v-stepper__header {
+    /* -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12); */
+    box-shadow: none!important}
+
+
   .v-stepper__step__step {
     height: 50px !important;
     width: 50px !important;
-  }
+  } 
   .animated-component {
     transition: opacity 1s ease-in-out;
     }
