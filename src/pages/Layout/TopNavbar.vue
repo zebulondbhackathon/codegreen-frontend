@@ -60,15 +60,14 @@
                       data-toggle="dropdown"
                     >
                       <md-icon>notifications</md-icon>
-                      <span class="notification">5</span>
+                      <span class="notification">3</span>
                       <p class="hidden-lg hidden-md">Notifications</p>
                     </md-button>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li><a href="#">Azure Data Factory pipeline runs complete</a></li>
                       <li><a href="#">Data Quality Checks completed Stream Analytics</a></li>
                       <li><a href="#">Batch reports sent</a></li>
-                      <li><a href="#">Another Notification</a></li>
-                      <li><a href="#">Another One</a></li>
+                    
                     </ul>
                   </drop-down>
                 </div>
@@ -76,7 +75,12 @@
             </li>
 
             <md-list-item href="#/user">
-              <i class="material-icons">person</i>
+               <v-avatar>
+      <img
+        src="https://cdn.vuetifyjs.com/images/john.jpg"
+        alt="John"
+      >
+    </v-avatar>
               <p class="hidden-lg hidden-md">Profile</p>
             </md-list-item>
           </md-list>
@@ -92,14 +96,7 @@ export default {
     return {
       selectedEmployee: null,
       employees: [
-        "Jim Halpert",
-        "Dwight Schrute",
-        "Michael Scott",
-        "Pam Beesly",
-        "Angela Martin",
-        "Kelly Kapoor",
-        "Ryan Howard",
-        "Kevin Malone"
+      
       ]
     };
   },
