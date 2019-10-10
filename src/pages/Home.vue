@@ -1,7 +1,7 @@
 <template>
  <!--<div id="home"></div>-->
    <div class="content">
-   <div id="home">
+   <!-- <div id="home">
      <div class="logo">
        <a href="#" class="simple-text logo-mini">
          <div align="center">
@@ -10,8 +10,12 @@
          <span><h1 align="center">Welcome to Caelimetrix</h1></span>
        </a>
      </div>
-   </div>
+   </div> -->
      <div>
+       
+      <div>
+          <iframe src="/carousel.html" frameBorder="0"  width="100%" style="height: 800px"></iframe>
+      </div>
      </div>
    <v-container>
      <v-row>
