@@ -17,7 +17,7 @@
           <iframe src="/carousel.html" frameBorder="0"  width="100%" style="height: 710px"></iframe>
       </div>
      </div>
-   <v-container>
+   <!-- <v-container>
      <v-row>
        <v-col sm="4">
          <div>
@@ -69,7 +69,7 @@
          <img src="@/assets/img/arc.png" alt="" style="width: 100%; height: 100%;" />
        </v-col>
      </v-row>
-   </v-container>
+   </v-container> -->
    </div>
 </template>
 <script>
